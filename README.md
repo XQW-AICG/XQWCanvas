@@ -1,4 +1,6 @@
 XQW Canvas v1.0.0 发布说明
+
+> 官网：<https://xqwcanvas.ltd> ｜ 下载：<https://github.com/XQW-AICG/XQWCanvas/releases/latest>
 一、产品简介
 小青蛙画布（XQW Canvas）是一款面向 AI 短剧、漫剧创作的智能创作平台。它帮助创作者将小说、灵感与故事内容快速整理成可执行的剧本，并结合 AI 生成的图片与视频，完成分镜设计与成片创作，让创意从文字走向作品。
 
