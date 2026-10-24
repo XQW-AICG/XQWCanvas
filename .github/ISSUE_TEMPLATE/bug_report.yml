@@ -1,0 +1,112 @@
+name: 报告问题
+description: 遇到崩溃、报错、显示异常等 Bug，请用这个表单
+title: "[Bug] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！请尽量把信息填完整，这能大幅缩短定位时间。
+        提交前可以先搜一下 [已有问题](https://github.com/XQW-AICG/XQWCanvas/issues)，避免重复。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 问题描述
+      description: 一句话说清发生了什么
+      placeholder: 例如：ComfyUI 模式下生成图片，进度到 100% 后节点卡住不显示结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 从打开软件开始，一步步写清楚
+      placeholder: |
+        1. 新建项目，选择「普通画布」
+        2. 添加「图片生成」节点
+        3. 引用一张图片，输入提示词「一只猫」
+        4. 点击「执行工作流」
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+      placeholder: 例如：节点显示生成的图片
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+      description: 有报错信息请把原文贴上来，不要截图代替文字
+      placeholder: 例如：节点一直显示进度环，控制台报 `xxx is not a function`
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 版本号
+      description: 在「设置 → 关于」里可以看到，形如 v1.0.0
+      placeholder: v1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 系统
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS 15 (Sequoia)
+        - macOS 14 (Sonoma)
+        - macOS 13 (Ventura)
+        - 其他（请在补充信息里说明）
+    validations:
+      required: true
+
+  - type: dropdown
+    id: chip
+    attributes:
+      label: 芯片 / 架构
+      description: macOS 用户请选 Apple Silicon 或 Intel；Windows 用户选 x64
+      options:
+        - Apple Silicon (M 系列)
+        - Intel / x64
+        - 不确定
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: 画布模式
+      description: 生成后端是哪种
+      options:
+        - ComfyUI 本地生成
+        - 普通画布（云端模型）
+        - 与生成无关（界面 / 文件 / 启动问题）
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息
+      description: 截图、日志、ComfyUI 版本、模型名等，都可以放这里
+      placeholder: |
+        - 截图：
+        - 日志：
+        - ComfyUI 版本：
+    validations:
+      required: false
