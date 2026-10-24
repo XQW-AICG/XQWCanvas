@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 使用问题与讨论
+    url: https://github.com/XQW-AICG/XQWCanvas/issues
+    about: 不确定是不是 Bug、想聊聊用法，可以先看已有讨论
+  - name: 官网
+    url: https://xqwcanvas.ltd
+    about: 下载安装包、查看更新日志
